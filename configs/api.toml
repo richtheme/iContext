@@ -1,0 +1,12 @@
+[web-server]
+bind_addr = ":8080"
+logger_level = "debug"
+
+[storage]
+database_uri = "host=localhost port=5436 user=postgres password=qwerty dbname=icontext sslmode=disable"
+# host.docker.internal for postgresql in docker
+
+[redis]
+redis_addr = "localhost:6379"
+redis_password = ""
+redis_db = 0
